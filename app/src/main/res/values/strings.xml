@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CoronaVirus</string>
+    <string name="title_home">STATUS</string>
+    <string name="title_dashboard">AFFECTED</string>
+    <string name="title_notifications">LATEST</string>
+    <string name="confirmed_cases">CONFIRMED CASES</string>
+    <string name="deaths">DEATHS</string>
+    <string name="affected_country">AFFECTED COUNTRY</string>
+    <string name="recovered">RECOVERED</string>
+</resources>
