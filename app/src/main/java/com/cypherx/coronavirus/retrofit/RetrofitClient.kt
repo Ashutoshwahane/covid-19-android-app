@@ -11,8 +11,6 @@ import java.util.concurrent.TimeUnit
 
 class RetrofitClient {
     companion object {
-    var host = "coronavirus-monitor.p.rapidapi.com"
-        var key = "f20c2bac0emsh5f6771358dcd556p14e6d6jsnf8ae7e313818"
         public fun getClient(BASE_URL: String): Retrofit {
             var interceptor = HttpLoggingInterceptor()
             interceptor.level = HttpLoggingInterceptor.Level.BODY
@@ -22,8 +20,6 @@ class RetrofitClient {
                     override fun intercept(chain: Interceptor.Chain): Response {
                         val original = chain.request()
                         val request = original.newBuilder()
-                            .addHeader("x-rapidapi-host", host)
-                            .addHeader("x-rapidapi-key", key)
                             .method(original.method, original.body)
                             .build()
                         return chain.proceed(request)

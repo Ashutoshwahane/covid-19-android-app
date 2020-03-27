@@ -11,9 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.cypherx.coronavirus.R
-import com.cypherx.coronavirus.model.AllData
 import com.cypherx.coronavirus.model.WorldStat
-import com.cypherx.coronavirus.model.latest
 import com.cypherx.coronavirus.retrofit.APIServices
 import com.cypherx.coronavirus.retrofit.ApiUtils
 import retrofit2.Call
